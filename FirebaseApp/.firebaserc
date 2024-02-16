@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-99428": {
+      "hosting": {
+        "app": [
+          "fir-99428"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-99428"
+  }
+}

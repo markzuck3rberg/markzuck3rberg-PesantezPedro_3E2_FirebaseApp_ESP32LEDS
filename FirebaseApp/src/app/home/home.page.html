@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      LEDS
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="encender('LED1')" [color]="getColor(estadoLed1)" fill="outline">Encender LED1</ion-button>
+  <ion-button (click)="apagar('LED1')" [color]="getColor(!estadoLed1)" fill="outline">Apagar LED1</ion-button>
+<br>
+
+  <ion-button (click)="encender('LED2')" [color]="getColor(estadoLed2)" fill="outline">Encender LED2</ion-button>
+  <ion-button (click)="apagar('LED2')" [color]="getColor(!estadoLed2)" fill="outline">Apagar LED2</ion-button>
+<br>
+
+  <ion-button (click)="encender('LED3')" [color]="getColor(estadoLed3)" fill="outline">Encender LED3</ion-button>
+  <ion-button (click)="apagar('LED3')" [color]="getColor(!estadoLed3)" fill="outline">Apagar LED3</ion-button>
+<br>
+
+<ion-button [color]="getColor(estadoLed4)" (click)="encender('LED1')" (click)="encender('LED2')"  (click)="encender('LED3')"  (click)="encender('LED4')" fill="outline">Encender LEDS</ion-button>
+  <ion-button [color]="getColor(!estadoLed4)" (click)="apagar('LED1')" (click)="apagar('LED2')" (click)="apagar('LED3')" (click)="apagar('LED4')" fill="outline">Apagar LEDS</ion-button>
+</ion-content>
+
